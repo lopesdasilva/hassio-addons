@@ -27,13 +27,19 @@
     "8889/udp": "proxy 2 udp",
     "8889/tcp": "proxy 2 tcp"
   },
-  "privileged": ["NET_ADMIN"],
+  "privileged": [
+    "NET_ADMIN"
+  ],
   "hassio_api": true,
   "hassio_role": "default",
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "keyfile": "privkey.pem",
+    "OPENCONNECT_URL": "Gateway URL",
+    "OPENCONNECT_USER": "Username",
+    "OPENCONNECT_PASSWORD": "Password",
+    "OPENCONNECT_OPTIONS": "--protocol=gp --reconnect-timeout 86400"
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
