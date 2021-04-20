@@ -27,6 +27,7 @@
     "8889/udp": "proxy 2 udp",
     "8889/tcp": "proxy 2 tcp"
   },
+  "privileged": ["NET_ADMIN"],
   "hassio_api": true,
   "hassio_role": "default",
   "options": {
