@@ -1,6 +1,6 @@
 {
   "name": "Open connect Global protect",
-  "version": "0.10",
+  "version": "0.11",
   "slug": "openconnect",
   "description": "open connect",
   "url": "https://github.com/lopesdasilva/addon-openconnect",
@@ -36,7 +36,8 @@
     "OPENCONNECT_URL": "Gateway URL",
     "OPENCONNECT_USER": "Username",
     "OPENCONNECT_PASSWORD": "Password",
-    "OPENCONNECT_OPTIONS": "--protocol=gp --reconnect-timeout 86400"
+    "OPENCONNECT_OPTIONS": "--protocol=gp --reconnect-timeout 86400",
+    "OPENCONNECT_MFA_CODE": ""
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
@@ -44,6 +45,7 @@
     "OPENCONNECT_USER": "str",
     "OPENCONNECT_PASSWORD": "str",
     "OPENCONNECT_OPTIONS": "str",
+    "OPENCONNECT_MFA_CODE": "str",
     "memory_max": "int?",
     "memory_init": "int?"
   },
