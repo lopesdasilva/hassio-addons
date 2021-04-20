@@ -1,9 +1,9 @@
 {
   "name": "Open connect Global protect",
-  "version": "0.19.3",
-  "slug": "openconnect-gp",
+  "version": "0.1",
+  "slug": "openconnect",
   "description": "open connect",
-  "url": "https://github.com/lopesdasilva/addon-unifi",
+  "url": "https://github.com/lopesdasilva/addon-openconnect",
   "webui": "https://[HOST]:[PORT:8443]",
   "startup": "services",
   "arch": [
