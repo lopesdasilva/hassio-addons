@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: UniFi Controller
+# Home Assistant Community Add-on: Open Connect
 
 This add-on runs Ubiquiti Networks' UniFi Controller software, which allows
 you to manage your UniFi network via the web browser. The add-on provides a
