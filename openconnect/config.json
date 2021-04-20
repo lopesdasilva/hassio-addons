@@ -1,31 +1,26 @@
 {
   "name": "Open connect Global protect",
-  "version": "0.11",
+  "version": "0.12",
   "slug": "openconnect",
   "description": "open connect",
   "url": "https://github.com/lopesdasilva/addon-openconnect",
-  "webui": "https://[HOST]:[PORT:8000]",
   "startup": "services",
   "arch": [
     "aarch64"
   ],
   "init": false,
   "map": [
-    "backup:rw",
     "ssl"
   ],
   "boot": "auto",
+  "host_network": true,
   "ports": {
-    "8889/udp": null,
-    "8889/tcp": null,
     "8888/udp": null,
     "8888/tcp": null
   },
   "ports_description": {
-    "8888/udp": "Proxy udp",
-    "8888/tcp": "Proxy tcp",
-    "8889/udp": "proxy 2 udp",
-    "8889/tcp": "proxy 2 tcp"
+    "8888/udp": "8888",
+    "8888/tcp": "8888"
   },
   "privileged": [
     "NET_ADMIN"
