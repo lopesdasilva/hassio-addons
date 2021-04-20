@@ -45,5 +45,6 @@
     "keyfile": "str",
     "memory_max": "int?",
     "memory_init": "int?"
-  }
+  },
+  "image": "lopesdasilva/hassio-docker-openconnect-gp-{arch}"
 }
