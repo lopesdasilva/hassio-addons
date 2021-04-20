@@ -1,16 +1,13 @@
 {
-  "name": "Lopesdasilva UniFi Controller",
+  "name": "Open connect Global protect",
   "version": "0.19.3",
-  "slug": "lopesdasilva-unifi",
-  "description": "Manage your UniFi network using a web browser",
+  "slug": "openconnect-gp",
+  "description": "open connect",
   "url": "https://github.com/lopesdasilva/addon-unifi",
   "webui": "https://[HOST]:[PORT:8443]",
   "startup": "services",
   "arch": [
     "aarch64",
-    "amd64",
-    "armv7",
-    "i386"
   ],
   "init": false,
   "map": [
@@ -19,28 +16,16 @@
   ],
   "boot": "auto",
   "ports": {
-    "161/udp": null,
-    "1900/udp": null,
-    "3478/udp": 3478,
-    "5514/udp": 5514,
-    "6789/tcp": 6789,
-    "8080/tcp": 8080,
-    "8443/tcp": 8443,
-    "8843/tcp": 8843,
-    "8880/tcp": 8880,
-    "10001/udp": 10001
+    "8889/udp": null,
+    "8889/tcp": null,
+    "8888/udp": null,
+    "8888/tcp": null
   },
   "ports_description": {
-    "161/udp": "Used for SNMP Access",
-    "1900/udp": "L2 discoverable port",
-    "3478/udp": "Used for STUN",
-    "5514/udp": "Used for remote syslog debugging",
-    "6789/tcp": "Used for UniFi mobile speed test",
-    "8080/tcp": "Used for device and controller communication",
-    "8443/tcp": "Used for controller web interface and API",
-    "8843/tcp": "Used for HTTPS portal redirection",
-    "8880/tcp": "Used for HTTP portal redirection",
-    "10001/udp": "Used for device discovery"
+    "8888/udp": "Proxy udp",
+    "8888/tcp": "Proxy tcp",
+    "8889/udp": "proxy 2 udp",
+    "8889/tcp": "proxy 2 tcp"
   },
   "hassio_api": true,
   "hassio_role": "default",
@@ -57,5 +42,5 @@
     "memory_max": "int?",
     "memory_init": "int?"
   },
-  "image": "hassioaddons/unifi-{arch}"
+  "image": "lopesdasilva/hassio-docker-openconnect-gp-{arch}"
 }

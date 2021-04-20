@@ -42,5 +42,5 @@
     "memory_max": "int?",
     "memory_init": "int?"
   },
-  "image": "mlabbe/iperf3"
+  "image": "lopesdasilva/iperf3"
 }
